@@ -1,3 +1,5 @@
+// قم باستبدال القيم بما يظهر لك من Firebase
+
 let currentUser = null;
 let displayName = "";
 
