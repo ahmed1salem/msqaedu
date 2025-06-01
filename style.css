@@ -1,57 +1,48 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fce4ec; /* وردي فاتح */
-  color: #333;
-  padding: 20px;
-  max-width: 500px;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  color: #d81b60;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin: 6px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-button {
-  padding: 10px 15px;
-  background-color: #ec407a;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin: 5px 2px;
-}
-
-button:hover {
-  background-color: #d81b60;
-}
-
-ul {
-  list-style-type: none;
+  background-color: #ffe6f0;
+  font-family: sans-serif;
+  margin: 0;
   padding: 0;
 }
 
-li {
-  background-color: #fff;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
 }
 
-li:hover {
-  background-color: #f8bbd0;
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: hotpink;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  padding: 8px;
+  margin-bottom: 5px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
