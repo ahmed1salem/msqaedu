@@ -2,7 +2,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyBcfSDvxdFmBS-mCEupGxQU1V4RwHF9Vjc",
   authDomain: "msqaedu-cc93b.firebaseapp.com",
   projectId: "msqaedu-cc93b",
-  storageBucket: "msqaedu-cc93b.firebasestorage.app",
+  storageBucket: "msqaedu-cc93b.appspot.com",
   messagingSenderId: "759791291775",
   appId: "1:759791291775:web:049907328b8ae348839e4a"
 };
