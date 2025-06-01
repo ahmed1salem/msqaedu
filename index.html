@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>To Do List</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="auth-section">
-    <h2>Login / Register</h2>
-    <input type="email" id="email" placeholder="Email"><br>
-    <input type="password" id="password" placeholder="Password"><br>
-    <button onclick="register()">Register</button>
-    <button onclick="login()">Login</button>
+  <div class="container">
+    <h2>To Do List</h2>
+
+    <div id="authSection">
+      <input type="text" id="displayName" placeholder="Username" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="todoSection" style="display: none;">
+      <p id="welcomeUser"></p>
+      <input type="text" id="taskInput" placeholder="Add new task" />
+      <label><input type="checkbox" id="taskPublic" /> Public Task</label>
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+      <button onclick="logout()">Logout</button>
+    </div>
   </div>
 
-  <div id="todo-section" style="display:none;">
-    <h2>Your To Do List</h2>
-    <input type="text" id="taskInput" placeholder="New Task">
-    <button onclick="addTask()">Add</button>
-    <ul id="taskList"></ul>
-    <button onclick="logout()">Logout</button>
-  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
   <script src="firebase-config.js"></script>
   <script src="app.js"></script>
