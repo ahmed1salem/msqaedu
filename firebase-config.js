@@ -1,3 +1,4 @@
+// قم باستبدال القيم بما يظهر لك من Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBcfSDvxdFmBS-mCEupGxQU1V4RwHF9Vjc",
   authDomain: "msqaedu-cc93b.firebaseapp.com",
